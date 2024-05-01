@@ -27,14 +27,12 @@ export default function index({ auth, projects, queryParams = null }) {
 
     const shortChanged = (filedName) => {
         if (filedName === queryParams.sortFiled) {
-            console.log("if");
             if (queryParams.sortDirection === "asc") {
                 queryParams.sortDirection = "desc";
             } else {
                 queryParams.sortDirection = "asc";
             }
         } else {
-            console.log("else");
             queryParams.sortFiled = filedName;
             queryParams.sortDirection = "asc";
         }

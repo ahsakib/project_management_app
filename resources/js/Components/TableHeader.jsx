@@ -15,7 +15,7 @@ export default function TableHeader({
             className="px-6 py-3 cursor-pointer"
 
         >
-            <div className="grid grid-cols-2 items-center">
+            <div className="flex gap-1.5 grid-cols-2 items-center">
                 <div className="col-span-1 gap-2">{children}</div>
                 <div className="col-span-1 cursor-pointer">
                     <svg
